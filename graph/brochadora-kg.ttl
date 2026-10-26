@@ -1,0 +1,1013 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ind: <https://cfaa.eus/ontology/industrial#> .
+@prefix kg: <https://cfaa.eus/kg/brochadora/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://cfaa.eus/kg/brochadora> a owl:Ontology ;
+    dcterms:title "Broaching machine knowledge graph"@en,
+        "Grafo de conocimiento de la brochadora"@es ;
+    owl:imports <https://cfaa.eus/ontology/industrial> ;
+    prov:wasDerivedFrom <https://cfaa.eus/submodels/Brochadora/HierarchicalStructures> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R001> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R001" ;
+    rdf:object kg:N014 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:4a00e92d-5505-5273-865e-f58b02b7f2f0> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R002> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R002" ;
+    rdf:object kg:N015 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:beac6070-ca72-5d1d-98df-4bd5201c0cb8> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R003> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R003" ;
+    rdf:object kg:N016 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:8e2cba28-cf5b-50a4-b6e3-39e257edda3c> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R004> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R004" ;
+    rdf:object kg:N017 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:7f46ac12-7828-5858-8fac-ff2393dc4427> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R005> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R005" ;
+    rdf:object kg:N018 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:ac64edfe-2808-5975-a1d2-08bcb6445996> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R006> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R006" ;
+    rdf:object kg:N019 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:f4b88632-78e9-5dd3-bf27-a870424fc6b9> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R007> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R007" ;
+    rdf:object kg:N042 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:30e139ff-94ee-5895-b08f-99ed849a4b73> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R008> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R008" ;
+    rdf:object kg:N052 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:60aedce7-bbd6-5afb-977a-5005bab72bc9> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R009> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R009" ;
+    rdf:object kg:N059 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:ab31bf39-0aaf-572c-980c-b640c88c9ac4> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R010> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R010" ;
+    rdf:object kg:N072 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:f7123999-bf44-5f37-967c-8b7b50a3ccfa> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R011> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R011" ;
+    rdf:object kg:N020 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:7c782b0c-939d-5cb8-acd6-9cd6a6c29bbd> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R012> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R012" ;
+    rdf:object kg:N002 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:eeeb5b0a-5492-5636-970c-3468848db007> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R013> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R013" ;
+    rdf:object kg:N024 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N015 ;
+    prov:wasDerivedFrom <urn:uuid:42ceb04d-e277-5edc-ab41-2ae49e09c54f> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R014> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R014" ;
+    rdf:object kg:N026 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N015 ;
+    prov:wasDerivedFrom <urn:uuid:e64746bd-838f-5bdd-a654-e9eee148cef6> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R015> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R015" ;
+    rdf:object kg:N028 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N016 ;
+    prov:wasDerivedFrom <urn:uuid:4e6cccb1-879c-5c17-a59c-ff2014275299> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R016> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R016" ;
+    rdf:object kg:N029 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N016 ;
+    prov:wasDerivedFrom <urn:uuid:55f1028b-da36-549f-9372-aa732250e9a2> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R017> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R017" ;
+    rdf:object kg:N032 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N031 ;
+    prov:wasDerivedFrom <urn:uuid:73214d2d-aea2-589b-abdb-2760e8ff2cfb> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R018> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R018" ;
+    rdf:object kg:N033 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N031 ;
+    prov:wasDerivedFrom <urn:uuid:5b315153-65ee-5484-9188-bae463597c08> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R019> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R019" ;
+    rdf:object kg:N036 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N017 ;
+    prov:wasDerivedFrom <urn:uuid:dc011f93-a607-51da-92c7-f134ab198d7b> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R020> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R020" ;
+    rdf:object kg:N037 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N017 ;
+    prov:wasDerivedFrom <urn:uuid:2ad26d9f-7f86-5b7a-9f66-16a7464742f8> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R021> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R021" ;
+    rdf:object kg:N038 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N017 ;
+    prov:wasDerivedFrom <urn:uuid:1a4515a9-78e4-58a5-acf9-24ac2d0db9e3> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R022> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R022" ;
+    rdf:object kg:N057 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N019 ;
+    prov:wasDerivedFrom <urn:uuid:054020e2-6454-548a-ad0c-29502ae71c5e> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R023> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R023" ;
+    rdf:object kg:N058 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N019 ;
+    prov:wasDerivedFrom <urn:uuid:0118f13d-5027-59e5-9aa3-0b4bb8744dbb> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R024> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R024" ;
+    rdf:object kg:N043 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N042 ;
+    prov:wasDerivedFrom <urn:uuid:286bbd8d-d9bd-5061-8721-1d34b00f6ed7> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R025> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R025" ;
+    rdf:object kg:N044 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N042 ;
+    prov:wasDerivedFrom <urn:uuid:000e6d25-0301-54cf-ad33-bad87c77176a> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R026> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R026" ;
+    rdf:object kg:N045 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N042 ;
+    prov:wasDerivedFrom <urn:uuid:0da06e1f-e55c-5a3c-bf17-696d1aa1d7fe> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R027> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R027" ;
+    rdf:object kg:N046 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N042 ;
+    prov:wasDerivedFrom <urn:uuid:64aba889-e616-564c-8029-a2d6fcd2c9c5> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R028> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R028" ;
+    rdf:object kg:N047 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N042 ;
+    prov:wasDerivedFrom <urn:uuid:10b0a567-6942-5e8a-afb9-234e81f18c1e> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R029> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R029" ;
+    rdf:object kg:N048 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N042 ;
+    prov:wasDerivedFrom <urn:uuid:86acf64a-d7b9-549a-9ff7-a5c0cf0f734d> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R030> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R030" ;
+    rdf:object kg:N049 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N042 ;
+    prov:wasDerivedFrom <urn:uuid:354dd184-95ba-538d-8056-a98075a62a7c> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R031> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R031" ;
+    rdf:object kg:N050 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N042 ;
+    prov:wasDerivedFrom <urn:uuid:342ec6f0-684e-55a9-ab60-f880871d1e22> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R032> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R032" ;
+    rdf:object kg:N051 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N042 ;
+    prov:wasDerivedFrom <urn:uuid:dc9c9e70-d0c8-57c4-bc48-963de947317f> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R033> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R033" ;
+    rdf:object kg:N053 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N052 ;
+    prov:wasDerivedFrom <urn:uuid:961f4053-5759-546a-9e21-7d2eedb05375> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R034> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R034" ;
+    rdf:object kg:N054 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N052 ;
+    prov:wasDerivedFrom <urn:uuid:c42ff15b-7d02-5b2f-afa7-18fc704f6edd> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R035> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R035" ;
+    rdf:object kg:N060 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N059 ;
+    prov:wasDerivedFrom <urn:uuid:f44141ec-70f6-541d-9a94-f55468e83b0a> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R036> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R036" ;
+    rdf:object kg:N061 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N059 ;
+    prov:wasDerivedFrom <urn:uuid:3fdf0683-4fbf-5b99-a23e-d456b5dc9afd> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R037> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R037" ;
+    rdf:object kg:N062 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N059 ;
+    prov:wasDerivedFrom <urn:uuid:368c67e2-8183-56d3-b3a6-c2025eaa3668> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R038> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R038" ;
+    rdf:object kg:N069 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N059 ;
+    prov:wasDerivedFrom <urn:uuid:3f23eec7-a258-50b0-bf40-5d499e39f0f1> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R039> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R039" ;
+    rdf:object kg:N063 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N059 ;
+    prov:wasDerivedFrom <urn:uuid:09f6c0ab-0b77-51aa-8df4-e770306bfdd7> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R040> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R040" ;
+    rdf:object kg:N064 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N059 ;
+    prov:wasDerivedFrom <urn:uuid:a3fdc456-b043-5cc0-8047-2700cdb126d9> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R041> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R041" ;
+    rdf:object kg:N065 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N059 ;
+    prov:wasDerivedFrom <urn:uuid:a795c7bf-2058-5951-9aaf-2ecc46da82d6> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R042> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R042" ;
+    rdf:object kg:N066 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N059 ;
+    prov:wasDerivedFrom <urn:uuid:6b350d97-aff2-5908-87ab-2f1cb0c841a8> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R043> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R043" ;
+    rdf:object kg:N067 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N059 ;
+    prov:wasDerivedFrom <urn:uuid:8b77d1d4-de24-5ad8-881a-4f030261863a> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R044> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R044" ;
+    rdf:object kg:N068 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N059 ;
+    prov:wasDerivedFrom <urn:uuid:304b8a18-daa7-59d4-90a8-c6468966e883> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R045> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R045" ;
+    rdf:object kg:N073 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N072 ;
+    prov:wasDerivedFrom <urn:uuid:bb906e24-81f8-5a89-88dc-1c7867b43428> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R046> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R046" ;
+    rdf:object kg:N003 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N002 ;
+    prov:wasDerivedFrom <urn:uuid:12472886-cf9a-5df1-b088-d3eb67e81f2a> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R047> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R047" ;
+    rdf:object kg:N004 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N002 ;
+    prov:wasDerivedFrom <urn:uuid:fadfa252-a4e5-5ead-a5e1-a73ebee68523> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R048> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R048" ;
+    rdf:object <https://cfaa.eus/assets/Brochadora/PLC> ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N002 ;
+    prov:wasDerivedFrom <urn:uuid:03cf3e3e-46eb-5bd6-bdb7-d9da0fd2254d> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R049> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R049" ;
+    rdf:object kg:N005 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N013 ;
+    prov:wasDerivedFrom <urn:uuid:86999a01-4420-5dd0-bb26-fe89494a3418> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R050> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R050" ;
+    rdf:object <https://cfaa.eus/assets/Brochadora/CNC8070> ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:312db8b6-8a96-5221-8ab2-30fb546b5055> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R051> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R051" ;
+    rdf:object kg:N083 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:956c4dfb-eef9-5f41-803f-5aa19730db0a> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R052> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R052" ;
+    rdf:object kg:N077 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:e10e0c63-a724-5507-bb8e-8c450799d814> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R053> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R053" ;
+    rdf:object kg:N078 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:1cb23bc1-7f34-5bcb-87f8-0898fb46b148> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R054> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R054" ;
+    rdf:object kg:N079 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:2f345456-0db3-5393-9c96-c8c1ea7d8962> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R055> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R055" ;
+    rdf:object kg:N007 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:aa25cb22-8ff1-56c8-894d-9e7be274eb99> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R056> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R056" ;
+    rdf:object kg:N011 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:9ac562a0-fa87-55cb-b7e0-83099368a133> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R057> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R057" ;
+    rdf:object kg:N012 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N011 ;
+    prov:wasDerivedFrom <urn:uuid:26cad9e5-cd07-5ea6-bf44-447e088cdf72> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R058> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R058" ;
+    rdf:object kg:N022 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:2e25d17d-7254-504f-9d8b-ac5e4306b9d5> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R059> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R059" ;
+    rdf:object kg:N023 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:2fe41431-a86d-5501-b276-e7552c959a50> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R060> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R060" ;
+    rdf:object kg:N055 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N053 ;
+    prov:wasDerivedFrom <urn:uuid:029fea9c-243b-5e13-9530-18d3d869fd5f> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R061> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R061" ;
+    rdf:object kg:N056 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N054 ;
+    prov:wasDerivedFrom <urn:uuid:ad3100ef-860b-5f23-b9e4-9992bf9494e9> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R062> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R062" ;
+    rdf:object kg:N013 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:5fbdf5cf-0fc3-58e2-b9cc-fd276e78f6a3> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R063> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R063" ;
+    rdf:object kg:N021 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N014 ;
+    prov:wasDerivedFrom <urn:uuid:d0670642-8afa-5e90-98e6-152d0221b071> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R064> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R064" ;
+    rdf:object kg:N025 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N015 ;
+    prov:wasDerivedFrom <urn:uuid:bf72966e-82b8-5357-9e90-2fa5ffff912d> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R065> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R065" ;
+    rdf:object kg:N070 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N059 ;
+    prov:wasDerivedFrom <urn:uuid:52c9126e-e942-5f8e-82b3-cd1d0dd403b7> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R066> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R066" ;
+    rdf:object <https://cfaa.eus/assets/Brochadora/PNOZmulti> ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject <https://cfaa.eus/assets/Brochadora> ;
+    prov:wasDerivedFrom <urn:uuid:11cecac9-4e97-5dd0-8a78-24fa80c41d29> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R067> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R067" ;
+    rdf:object kg:N030 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N015 ;
+    prov:wasDerivedFrom <urn:uuid:ca676b57-2b21-5833-b2db-e9301eab6ba1> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R068> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R068" ;
+    rdf:object kg:N031 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N015 ;
+    prov:wasDerivedFrom <urn:uuid:e29b218d-59c3-5fdc-ac70-73fac0459ad8> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R069> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R069" ;
+    rdf:object kg:N034 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N017 ;
+    prov:wasDerivedFrom <urn:uuid:258c1296-5214-5879-a63e-93cc16e8c7d0> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R070> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R070" ;
+    rdf:object kg:N040 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N016 ;
+    prov:wasDerivedFrom <urn:uuid:62303805-a690-5030-b14c-6d156ab3a02a> .
+
+<https://cfaa.eus/kg/brochadora/assertion/R071> a rdf:Statement,
+        prov:Entity ;
+    dcterms:identifier "R071" ;
+    rdf:object kg:N041 ;
+    rdf:predicate ind:hasPart ;
+    rdf:subject kg:N016 ;
+    prov:wasDerivedFrom <urn:uuid:0027807a-8ff5-543e-b754-6e094cc10bb6> .
+
+<https://cfaa.eus/assets/Brochadora/CNC8070> a ind:CNC ;
+    rdfs:label "CNC FAGOR 8070"@es ;
+    dcterms:identifier "N084" ;
+    prov:wasDerivedFrom <urn:uuid:451ff0bd-2191-5af9-98c2-34077f922089> .
+
+<https://cfaa.eus/assets/Brochadora/PLC> a ind:PLC ;
+    rdfs:label "PLC"@es ;
+    dcterms:identifier "N085" ;
+    prov:wasDerivedFrom <urn:uuid:09390ccb-b614-5312-bcbf-df7cb80be73e> .
+
+<https://cfaa.eus/assets/Brochadora/PNOZmulti> a ind:SafetyController ;
+    rdfs:label "Controlador de seguridad PILZ / PNOZmulti"@es ;
+    dcterms:identifier "N097" ;
+    prov:wasDerivedFrom <urn:uuid:f1e1a9f1-de79-5364-9c45-1b8df2db3edf> .
+
+kg:N003 a ind:MainSwitch ;
+    rdfs:label "Interruptor general"@es ;
+    dcterms:identifier "N003" ;
+    prov:wasDerivedFrom <urn:uuid:a1f328d8-e442-57dc-91b8-f1988535405d> .
+
+kg:N004 a ind:EmergencyStopButton ;
+    rdfs:label "Pulsador parada emergencia armario eléctrico"@es ;
+    dcterms:identifier "N004" ;
+    prov:wasDerivedFrom <urn:uuid:20d6a0b5-60a8-52db-9cba-a19bfa6ba068> .
+
+kg:N005 a ind:EmergencyStopButton ;
+    rdfs:label "Pulsador parada emergencia botonera"@es ;
+    dcterms:identifier "N005" ;
+    prov:wasDerivedFrom <urn:uuid:91247521-ad56-5464-9b09-295531be0d63> .
+
+kg:N007 a ind:RemovablePanel ;
+    rdfs:label "Paneles desmontables de mantenimiento"@es ;
+    dcterms:identifier "N007" ;
+    prov:wasDerivedFrom <urn:uuid:77037553-1e77-5b2f-af06-8f4e030098a6> .
+
+kg:N012 a ind:AccessHatch ;
+    rdfs:label "Trampilla plataforma"@es ;
+    dcterms:identifier "N012" ;
+    prov:wasDerivedFrom <urn:uuid:c9b5cb9a-317c-5679-897a-263a166caa53> .
+
+kg:N018 a ind:BroachCarrier ;
+    rdfs:label "Carro porta-brochas"@es ;
+    dcterms:identifier "N018" ;
+    prov:wasDerivedFrom <urn:uuid:aa11d690-6fe3-5fc1-9c05-0257de7bb640> .
+
+kg:N020 a ind:MachineEnclosure ;
+    rdfs:label "Carenado"@es ;
+    dcterms:identifier "N020" ;
+    prov:wasDerivedFrom <urn:uuid:1fe4c2b3-c7eb-52c6-bed1-3576702f9cba> .
+
+kg:N021 a ind:VibrationIsolator ;
+    rdfs:label "Elementos antivibratorios"@es ;
+    dcterms:identifier "N021" ;
+    prov:wasDerivedFrom <urn:uuid:13d28beb-0674-51c0-96cd-3d454f39c0ed> .
+
+kg:N022 a ind:Platform ;
+    rdfs:label "Plataforma lateral izquierda"@es ;
+    dcterms:identifier "N022" ;
+    prov:wasDerivedFrom <urn:uuid:88d5dc93-bfbf-5c66-baa7-7bec9a4cbf25> .
+
+kg:N023 a ind:Platform ;
+    rdfs:label "Plataforma lateral derecha"@es ;
+    dcterms:identifier "N023" ;
+    prov:wasDerivedFrom <urn:uuid:37d09d26-3ff5-57d8-be03-002f0e108eed> .
+
+kg:N024 a ind:LinearGuide ;
+    rdfs:label "Guías lineales de la columna"@es ;
+    dcterms:identifier "N024" ;
+    prov:wasDerivedFrom <urn:uuid:1feedff1-03b6-5b6f-86d8-ee42040d788b> .
+
+kg:N025 a ind:LinearScale ;
+    rdfs:label "Reglas lineales de la columna"@es ;
+    dcterms:identifier "N025" ;
+    prov:wasDerivedFrom <urn:uuid:5c4f21fc-9630-5e36-a5fc-db8b911a7c63> .
+
+kg:N026 a ind:RackAndPinionDrive ;
+    rdfs:label "Sistema piñón-cremallera del carro porta-piezas"@es ;
+    dcterms:identifier "N026" ;
+    prov:wasDerivedFrom <urn:uuid:8076ee2e-a20c-5d7e-b23b-b1a5cd8b3652> .
+
+kg:N028 a ind:GuideCarriage ;
+    rdfs:label "Patines del carro porta-piezas"@es ;
+    dcterms:identifier "N028" ;
+    prov:wasDerivedFrom <urn:uuid:859c9dcd-6528-5ba4-b58d-4020f549fce3> .
+
+kg:N029 a ind:HydraulicLock ;
+    rdfs:label "Bloqueos hidráulicos del carro porta-piezas"@es ;
+    dcterms:identifier "N029" ;
+    prov:wasDerivedFrom <urn:uuid:085ea195-8e7f-5906-8f10-4b7dac6948f4> .
+
+kg:N030 a ind:LinearGuide ;
+    rdfs:label "Guías de contrapesos"@es ;
+    dcterms:identifier "N030" ;
+    prov:wasDerivedFrom <urn:uuid:76f59032-d104-53d6-ac7b-893d05cdc18e> .
+
+kg:N032 a ind:GuideCarriage ;
+    rdfs:label "Patines de contrapesos"@es ;
+    dcterms:identifier "N032" ;
+    prov:wasDerivedFrom <urn:uuid:518a2631-86ea-5edc-81d3-a3382ea82fd7> .
+
+kg:N033 a ind:HydraulicLock ;
+    rdfs:label "Bloqueos hidráulicos de contrapesos"@es ;
+    dcterms:identifier "N033" ;
+    prov:wasDerivedFrom <urn:uuid:1c09c5a7-b2e2-59aa-8918-e3bb7a8088ba> .
+
+kg:N034 a ind:ServoMotor ;
+    rdfs:label "Servomotor del plato divisor"@es ;
+    dcterms:identifier "N034" ;
+    prov:wasDerivedFrom <urn:uuid:20302387-109f-5f8b-9417-4fc61f8605af> .
+
+kg:N036 a ind:SensorAssembly ;
+    rdfs:label "Torreta de micros del plato divisor"@es ;
+    dcterms:identifier "N036" ;
+    prov:wasDerivedFrom <urn:uuid:5d4a6b3a-ee28-5ee9-bb98-75d0707b7973> .
+
+kg:N037 a ind:IndexingBase ;
+    rdfs:label "Base 0° del plato divisor"@es ;
+    dcterms:identifier "N037" ;
+    prov:wasDerivedFrom <urn:uuid:c4ce722a-bff7-5fe9-b4ef-12833aa65df7> .
+
+kg:N038 a ind:IndexingBase ;
+    rdfs:label "Base 15° del plato divisor"@es ;
+    dcterms:identifier "N038" ;
+    prov:wasDerivedFrom <urn:uuid:534ae889-7226-5b69-bc3a-7ee392a09bad> .
+
+kg:N040 a ind:ServoMotor ;
+    rdfs:label "Servomotor izquierdo del carro porta-piezas (18M1)"@es ;
+    dcterms:identifier "N040" ;
+    prov:wasDerivedFrom <urn:uuid:7edadad7-1b4e-5fc9-ad8f-e596e59b86a2> .
+
+kg:N041 a ind:ServoMotor ;
+    rdfs:label "Servomotor derecho del carro porta-piezas (19M1)"@es ;
+    dcterms:identifier "N041" ;
+    prov:wasDerivedFrom <urn:uuid:dcbd4652-baec-5ff3-a20e-d955a3f1ff53> .
+
+kg:N043 a ind:ManualValve ;
+    rdfs:label "Válvula neumática de mando manual"@es ;
+    dcterms:identifier "N043" ;
+    prov:wasDerivedFrom <urn:uuid:15bbecea-859e-5f7a-8e15-9050a0961b03> .
+
+kg:N044 a ind:FilterRegulator ;
+    rdfs:label "Filtro regulador de presión"@es ;
+    dcterms:identifier "N044" ;
+    prov:wasDerivedFrom <urn:uuid:ec74026b-2772-526a-a51f-4f2d77b013bf> .
+
+kg:N045 a ind:AirDryer ;
+    rdfs:label "Secador de aire"@es ;
+    dcterms:identifier "N045" ;
+    prov:wasDerivedFrom <urn:uuid:f2dc6dd7-f907-516e-a3f9-4fe744926f4c> .
+
+kg:N046 a ind:PressureGauge ;
+    rdfs:label "Manómetros del sistema neumático"@es ;
+    dcterms:identifier "N046" ;
+    prov:wasDerivedFrom <urn:uuid:bcd0786c-b111-51ad-aabf-bf46f4ccd807> .
+
+kg:N047 a ind:PneumaticLubricator ;
+    rdfs:label "Lubricador del sistema neumático"@es ;
+    dcterms:identifier "N047" ;
+    prov:wasDerivedFrom <urn:uuid:be63f7f2-cdd0-50b4-b5c9-7d09e3b4fc54> .
+
+kg:N048 a ind:PressureSwitch ;
+    rdfs:label "Presostatos del sistema neumático"@es ;
+    dcterms:identifier "N048" ;
+    prov:wasDerivedFrom <urn:uuid:f4a54da0-2701-5f0f-9d8d-29cf50f71005> .
+
+kg:N049 a ind:PressureRegulator ;
+    rdfs:label "Reguladores de presión del sistema neumático"@es ;
+    dcterms:identifier "N049" ;
+    prov:wasDerivedFrom <urn:uuid:fd9160ab-de02-5840-8ec2-0449cbf05ef2> .
+
+kg:N050 a ind:SolenoidValve ;
+    rdfs:label "Electroválvulas del sistema neumático"@es ;
+    dcterms:identifier "N050" ;
+    prov:wasDerivedFrom <urn:uuid:56395638-4068-5bef-8af5-a834b7e3a5e3> .
+
+kg:N051 a ind:Silencer ;
+    rdfs:label "Silenciadores del sistema neumático"@es ;
+    dcterms:identifier "N051" ;
+    prov:wasDerivedFrom <urn:uuid:0c65d010-f7a4-55e6-8f24-49a197cdb5dd> .
+
+kg:N055 a ind:LubricationUnit ;
+    rdfs:label "Central de engrase automática"@es ;
+    dcterms:identifier "N055" ;
+    prov:wasDerivedFrom <urn:uuid:b391f8b1-bbac-5240-9d16-6c502da95b27> .
+
+kg:N056 a ind:LubricantReservoir ;
+    rdfs:label "Depósito de engrase manual"@es ;
+    dcterms:identifier "N056" ;
+    prov:wasDerivedFrom <urn:uuid:baffa574-9efa-553d-b984-7764d979d27d> .
+
+kg:N057 a ind:PneumaticCylinder ;
+    rdfs:label "Cilindro neumático guiado del sistema de limpieza"@es ;
+    dcterms:identifier "N057" ;
+    prov:wasDerivedFrom <urn:uuid:244e3c8c-b812-5bcd-ae8d-c638ce1ae32a> .
+
+kg:N058 a ind:Brush ;
+    rdfs:label "Cepillos del sistema de limpieza"@es ;
+    dcterms:identifier "N058" ;
+    prov:wasDerivedFrom <urn:uuid:7bbb8910-f536-58d6-abbc-fd8722b6e74b> .
+
+kg:N060 a ind:PistonPump ;
+    rdfs:label "Bomba de pistones del sistema hidráulico"@es ;
+    dcterms:identifier "N060" ;
+    prov:wasDerivedFrom <urn:uuid:138db3c4-2b54-5bed-bc27-453784bafe1d> .
+
+kg:N061 a ind:LevelTemperatureIndicator ;
+    rdfs:label "Indicador de nivel con termómetro"@es ;
+    dcterms:identifier "N061" ;
+    prov:wasDerivedFrom <urn:uuid:5c63106b-7e3d-57c4-9805-cb7118f1873d> .
+
+kg:N062 a ind:LevelSensor ;
+    rdfs:label "Sensor de nivel del sistema hidráulico"@es ;
+    dcterms:identifier "N062" ;
+    prov:wasDerivedFrom <urn:uuid:cd5334b7-bc15-5f16-bfe4-7853428a90eb> .
+
+kg:N063 a ind:ElectricMotor ;
+    rdfs:label "Motor del grupo hidráulico"@es ;
+    dcterms:identifier "N063" ;
+    prov:wasDerivedFrom <urn:uuid:2aee6180-2a91-5330-9440-06b598dcf1f2> .
+
+kg:N064 a ind:PressureReducingValve ;
+    rdfs:label "Reductora de presión del sistema hidráulico"@es ;
+    dcterms:identifier "N064" ;
+    prov:wasDerivedFrom <urn:uuid:3016b210-4874-538e-a684-9661f8f97245> .
+
+kg:N065 a ind:SolenoidValve ;
+    rdfs:label "Electroválvulas del sistema hidráulico"@es ;
+    dcterms:identifier "N065" ;
+    prov:wasDerivedFrom <urn:uuid:63531fef-81a5-5e4d-b94b-bf45a320a047> .
+
+kg:N066 a ind:PressureSwitch ;
+    rdfs:label "Presostato electrónico del sistema hidráulico"@es ;
+    dcterms:identifier "N066" ;
+    prov:wasDerivedFrom <urn:uuid:b9edfb96-4dfc-5668-aa05-4788f40ccf45> .
+
+kg:N067 a ind:PressureGauge ;
+    rdfs:label "Manómetro vertical del sistema hidráulico"@es ;
+    dcterms:identifier "N067" ;
+    prov:wasDerivedFrom <urn:uuid:174fa125-0b3e-508b-a6c9-30a98a1dac22> .
+
+kg:N068 a ind:Filter ;
+    rdfs:label "Filtro del sistema hidráulico"@es ;
+    dcterms:identifier "N068" ;
+    prov:wasDerivedFrom <urn:uuid:f0194db3-4019-5f79-91cf-20dde17b0c9f> .
+
+kg:N069 a ind:Coupling ;
+    rdfs:label "Semiacoplamientos del sistema hidráulico"@es ;
+    dcterms:identifier "N069" ;
+    prov:wasDerivedFrom <urn:uuid:a04e7a46-6e15-5a54-aff9-db2988e309d2> .
+
+kg:N070 a ind:HydraulicReservoir ;
+    rdfs:label "Depósito hidráulico"@es ;
+    dcterms:identifier "N070" ;
+    prov:wasDerivedFrom <urn:uuid:ece7447d-bded-5c47-8d74-c1092aace41c> .
+
+kg:N073 a ind:CoolantReservoir ;
+    rdfs:label "Depósito de refrigeración"@es ;
+    dcterms:identifier "N073" ;
+    prov:wasDerivedFrom <urn:uuid:7a01ef6c-d777-582d-947f-dcfdbcec5961> .
+
+kg:N077 a ind:SlidingDoor ;
+    rdfs:label "Portón doble corredero frontal"@es ;
+    dcterms:identifier "N077" ;
+    prov:wasDerivedFrom <urn:uuid:7a239d87-3f83-5b35-8063-b937eabbc87d> .
+
+kg:N078 a ind:SlidingDoor ;
+    rdfs:label "Puerta corredera lateral izquierda"@es ;
+    dcterms:identifier "N078" ;
+    prov:wasDerivedFrom <urn:uuid:a1c5f2f7-0a1d-55dd-85fa-25b0f9141a51> .
+
+kg:N079 a ind:SlidingDoor ;
+    rdfs:label "Puerta corredera lateral derecha"@es ;
+    dcterms:identifier "N079" ;
+    prov:wasDerivedFrom <urn:uuid:890071c1-c019-5359-92da-c9b697a63651> .
+
+kg:N083 a ind:HumanMachineInterface ;
+    rdfs:label "Panel operador / pantalla táctil FAGOR PC-21"@es ;
+    dcterms:identifier "N083" ;
+    prov:wasDerivedFrom <urn:uuid:a0d72b24-1a3a-5b3c-ba39-764fd3fe1fb0> .
+
+kg:N011 a ind:Platform ;
+    rdfs:label "Plataforma cambio de herramienta"@es ;
+    dcterms:identifier "N011" ;
+    prov:wasDerivedFrom <urn:uuid:66c1db73-c317-5859-8826-a13888a28039> ;
+    ind:hasPart kg:N012 .
+
+kg:N013 a ind:OperatorControlPanel ;
+    rdfs:label "Botonera de la máquina"@es ;
+    dcterms:identifier "N013" ;
+    prov:wasDerivedFrom <urn:uuid:42f0d20d-c1d7-50ee-982b-b69508695c57> ;
+    ind:hasPart kg:N005 .
+
+kg:N014 a ind:MachineBase ;
+    rdfs:label "Zócalo"@es ;
+    dcterms:identifier "N014" ;
+    prov:wasDerivedFrom <urn:uuid:22501cb3-9069-56c4-ac53-c100a585121f> ;
+    ind:hasPart kg:N021 .
+
+kg:N053 a ind:AutomaticLubricationSystem ;
+    rdfs:label "Engrase automático de grasa"@es ;
+    dcterms:identifier "N053" ;
+    prov:wasDerivedFrom <urn:uuid:509b9ab1-b103-58bb-bb2b-d038ec997101> ;
+    ind:hasPart kg:N055 .
+
+kg:N054 a ind:ManualLubricationSystem ;
+    rdfs:label "Engrase manual de aceite"@es ;
+    dcterms:identifier "N054" ;
+    prov:wasDerivedFrom <urn:uuid:69af6762-6b8e-51ca-a217-36c1d2122a1d> ;
+    ind:hasPart kg:N056 .
+
+kg:N072 a ind:CoolingSystem ;
+    rdfs:label "Sistema de refrigeración"@es ;
+    dcterms:identifier "N072" ;
+    prov:wasDerivedFrom <urn:uuid:a3b1da34-124e-5331-9ba4-86b255b5a2a2> ;
+    ind:hasPart kg:N073 .
+
+kg:N019 a ind:CleaningSystem ;
+    rdfs:label "Sistema de limpieza de brochas"@es ;
+    dcterms:identifier "N019" ;
+    prov:wasDerivedFrom <urn:uuid:a9f32a6b-7180-5fc6-8c7d-25eef5e9878e> ;
+    ind:hasPart kg:N057,
+        kg:N058 .
+
+kg:N031 a ind:Counterweight ;
+    rdfs:label "Contrapesos"@es ;
+    dcterms:identifier "N031" ;
+    prov:wasDerivedFrom <urn:uuid:537590fe-07d9-5bef-b2e0-0c563968a667> ;
+    ind:hasPart kg:N032,
+        kg:N033 .
+
+kg:N052 a ind:LubricationSystem ;
+    rdfs:label "Sistema de engrase"@es ;
+    dcterms:identifier "N052" ;
+    prov:wasDerivedFrom <urn:uuid:e1e13b09-1c0d-567e-b077-3bb0e88e0bd9> ;
+    ind:hasPart kg:N053,
+        kg:N054 .
+
+kg:N002 a ind:ElectricalCabinet ;
+    rdfs:label "Armario eléctrico"@es ;
+    dcterms:identifier "N002" ;
+    prov:wasDerivedFrom <urn:uuid:5999e964-2d58-5b33-b9d4-77c980388098> ;
+    ind:hasPart <https://cfaa.eus/assets/Brochadora/PLC>,
+        kg:N003,
+        kg:N004 .
+
+kg:N016 a ind:WorkpieceCarrier ;
+    rdfs:label "Carro porta-piezas"@es ;
+    dcterms:identifier "N016" ;
+    prov:wasDerivedFrom <urn:uuid:69c8cff7-b03d-5188-a1ea-0712a53e5841> ;
+    ind:hasPart kg:N028,
+        kg:N029,
+        kg:N040,
+        kg:N041 .
+
+kg:N017 a ind:IndexingTable ;
+    rdfs:label "Plato divisor"@es ;
+    dcterms:identifier "N017" ;
+    prov:wasDerivedFrom <urn:uuid:c6a5e1ff-a6da-556a-954f-16565e7ae484> ;
+    ind:hasPart kg:N034,
+        kg:N036,
+        kg:N037,
+        kg:N038 .
+
+kg:N015 a ind:MachineColumn ;
+    rdfs:label "Columna"@es ;
+    dcterms:identifier "N015" ;
+    prov:wasDerivedFrom <urn:uuid:796f01f6-4bb4-5800-9411-cd49e32f4305> ;
+    ind:hasPart kg:N024,
+        kg:N025,
+        kg:N026,
+        kg:N030,
+        kg:N031 .
+
+kg:N042 a ind:PneumaticSystem ;
+    rdfs:label "Sistema neumático"@es ;
+    dcterms:identifier "N042" ;
+    prov:wasDerivedFrom <urn:uuid:ee814c20-211c-5fe4-b28b-c9244a066771> ;
+    ind:hasPart kg:N043,
+        kg:N044,
+        kg:N045,
+        kg:N046,
+        kg:N047,
+        kg:N048,
+        kg:N049,
+        kg:N050,
+        kg:N051 .
+
+kg:N059 a ind:HydraulicSystem ;
+    rdfs:label "Sistema hidráulico"@es ;
+    dcterms:identifier "N059" ;
+    prov:wasDerivedFrom <urn:uuid:f7d830b6-a1a5-5341-b901-1b7b167b7c96> ;
+    ind:hasPart kg:N060,
+        kg:N061,
+        kg:N062,
+        kg:N063,
+        kg:N064,
+        kg:N065,
+        kg:N066,
+        kg:N067,
+        kg:N068,
+        kg:N069,
+        kg:N070 .
+
+<https://cfaa.eus/assets/Brochadora> a ind:BroachingMachine ;
+    rdfs:label "Brochadora"@es ;
+    dcterms:identifier "EntryNode" ;
+    prov:wasDerivedFrom <urn:uuid:bae51900-5389-5d1d-a93a-4ade1a12c9a1> ;
+    ind:hasPart <https://cfaa.eus/assets/Brochadora/CNC8070>,
+        <https://cfaa.eus/assets/Brochadora/PNOZmulti>,
+        kg:N002,
+        kg:N007,
+        kg:N011,
+        kg:N013,
+        kg:N014,
+        kg:N015,
+        kg:N016,
+        kg:N017,
+        kg:N018,
+        kg:N019,
+        kg:N020,
+        kg:N022,
+        kg:N023,
+        kg:N042,
+        kg:N052,
+        kg:N059,
+        kg:N072,
+        kg:N077,
+        kg:N078,
+        kg:N079,
+        kg:N083 .
+
