@@ -429,3 +429,68 @@ ind:Component a owl:Class ;
         "Componente"@es ;
     rdfs:subClassOf ind:IndustrialAsset .
 
+
+
+@prefix ind: <https://cfaa.eus/ontology/industrial#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Extensión para propiedades de activos y mapeos a InfluxDB 2.x.
+# Las instancias, nombres físicos y relaciones concretas están en brochadora-kg.ttl.
+
+ind:AssetProperty a owl:Class ;
+    rdfs:label "Propiedad de un activo"@es, "Asset property"@en ;
+    rdfs:comment "Propiedad específica de un activo industrial. Sus valores temporales pueden localizarse mediante un mapeo externo."@es .
+
+ind:TorqueProperty a owl:Class ;
+    rdfs:subClassOf ind:AssetProperty ;
+    rdfs:label "Propiedad de par"@es, "Par motor"@es, "Torque property"@en, "Torque"@en ;
+    rdfs:comment "Propiedad de par asociada a un activo. La unidad, escala y naturaleza de la señal se documentan cuando se conocen; el nombre del field no las determina."@es .
+
+ind:TimeSeriesBinding a owl:Class ;
+    rdfs:label "Mapeo de serie temporal"@es, "Time series binding"@en ;
+    rdfs:comment "Localización de valores temporales mediante origen, measurement y field. Si el origen requiere seleccionar tags, dichos filtros deben añadirse al mapeo antes de distinguir series concretas."@es .
+
+ind:InfluxDBSource a owl:Class ;
+    rdfs:label "Origen de datos InfluxDB"@es, "InfluxDB data source"@en ;
+    rdfs:comment "Identificación lógica de un origen InfluxDB y su bucket. La aplicación resuelve la conexión, organización y credenciales mediante esta identificación."@es .
+
+# Object properties: enlaces entre individuos, no entre clases.
+ind:hasProperty a owl:ObjectProperty ;
+    rdfs:label "tiene propiedad"@es, "has property"@en ;
+    rdfs:domain ind:IndustrialAsset ;
+    rdfs:range ind:AssetProperty ;
+    owl:inverseOf ind:isPropertyOf .
+
+ind:isPropertyOf a owl:ObjectProperty ;
+    rdfs:label "es propiedad de"@es, "is property of"@en ;
+    rdfs:domain ind:AssetProperty ;
+    rdfs:range ind:IndustrialAsset .
+
+ind:hasTimeSeriesBinding a owl:ObjectProperty ;
+    rdfs:label "tiene mapeo de serie temporal"@es, "has time series binding"@en ;
+    rdfs:domain ind:AssetProperty ;
+    rdfs:range ind:TimeSeriesBinding .
+
+ind:source a owl:ObjectProperty ;
+    rdfs:label "tiene origen de datos"@es, "has data source"@en ;
+    rdfs:domain ind:TimeSeriesBinding ;
+    rdfs:range ind:InfluxDBSource .
+
+# Datatype properties: nombres físicos exactos, sensibles a mayúsculas.
+ind:bucketName a owl:DatatypeProperty ;
+    rdfs:label "nombre del bucket"@es, "bucket name"@en ;
+    rdfs:domain ind:InfluxDBSource ;
+    rdfs:range xsd:string .
+
+ind:measurementName a owl:DatatypeProperty ;
+    rdfs:label "nombre del measurement"@es, "measurement name"@en ;
+    rdfs:domain ind:TimeSeriesBinding ;
+    rdfs:range xsd:string .
+
+ind:fieldName a owl:DatatypeProperty ;
+    rdfs:label "nombre del field"@es, "field name"@en ;
+    rdfs:domain ind:TimeSeriesBinding ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Clave física exacta del field en InfluxDB; en Flux se compara con _field. No es el nombre semántico de la propiedad."@es .

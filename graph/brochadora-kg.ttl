@@ -1011,3 +1011,26 @@ kg:N059 a ind:HydraulicSystem ;
         kg:N079,
         kg:N083 .
 
+
+
+# Enlace de TORQUE1 al servomotor indicado por el usuario.
+@prefix ind: <https://cfaa.eus/ontology/industrial#> .
+@prefix kg: <https://cfaa.eus/kg/brochadora/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+kg:N040 ind:hasProperty kg:TORQUE1Property .
+
+kg:TORQUE1Property a ind:TorqueProperty ;
+    rdfs:label "Propiedad de par asociada a TORQUE1"@es ;
+    ind:isPropertyOf kg:N040 ;
+    ind:hasTimeSeriesBinding kg:TORQUE1Binding .
+
+kg:TORQUE1Binding a ind:TimeSeriesBinding ;
+    rdfs:label "Mapeo ekin / fingerprintZ / TORQUE1"@es ;
+    ind:source kg:InfluxDBEkin ;
+    ind:measurementName "fingerprintZ" ;
+    ind:fieldName "TORQUE1" .
+
+kg:InfluxDBEkin a ind:InfluxDBSource ;
+    rdfs:label "Origen lógico InfluxDB del bucket ekin"@es ;
+    ind:bucketName "ekin" .
