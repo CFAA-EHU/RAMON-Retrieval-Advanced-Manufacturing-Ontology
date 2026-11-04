@@ -1,496 +1,716 @@
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix : <https://cfaa.eus/ontology/industrial#> .
 @prefix ind: <https://cfaa.eus/ontology/industrial#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-<https://cfaa.eus/ontology/industrial> a owl:Ontology ;
-    dcterms:description "Minimal industrial ontology for semantic lifting of AAS HierarchicalStructures. Version 0.1 intentionally models only concepts required by the EKIN broaching-machine hierarchy."@en ;
-    dcterms:title "CFAA Industrial Ontology"@en,
-        "Ontología industrial CFAA"@es ;
-    owl:versionInfo "0.1" .
-
-ind:AccessHatch a owl:Class ;
-    rdfs:label "AccessHatch"@en,
-        "Trampilla de acceso"@es ;
-    rdfs:subClassOf ind:StructuralComponent .
-
-ind:AirDryer a owl:Class ;
-    rdfs:label "AirDryer"@en,
-        "Secador de aire"@es ;
-    rdfs:subClassOf ind:PneumaticComponent .
-
-ind:AutomaticLubricationSystem a owl:Class ;
-    rdfs:label "AutomaticLubricationSystem"@en,
-        "Sistema de engrase automático"@es ;
-    rdfs:subClassOf ind:LubricationSystem .
-
-ind:BroachCarrier a owl:Class ;
-    rdfs:label "BroachCarrier"@en,
-        "Carro porta-brochas"@es ;
-    rdfs:subClassOf ind:MotionComponent .
-
-ind:BroachingMachine a owl:Class ;
-    rdfs:label "BroachingMachine"@en,
-        "Brochadora"@es ;
-    rdfs:subClassOf ind:MachineTool .
-
-ind:Brush a owl:Class ;
-    rdfs:label "Brush"@en,
-        "Cepillo"@es ;
-    rdfs:subClassOf ind:Component .
-
-ind:CNC a owl:Class ;
-    rdfs:label "CNC"@en,
-        "Control numérico computarizado"@es ;
-    rdfs:subClassOf ind:ControlComponent .
-
-ind:CleaningSystem a owl:Class ;
-    rdfs:label "CleaningSystem"@en,
-        "Sistema de limpieza"@es ;
-    rdfs:subClassOf ind:Subsystem .
-
-ind:CoolantReservoir a owl:Class ;
-    rdfs:label "CoolantReservoir"@en,
-        "Depósito de refrigeración"@es ;
-    rdfs:subClassOf ind:CoolingComponent,
-        ind:Reservoir .
-
-ind:CoolingSystem a owl:Class ;
-    rdfs:label "CoolingSystem"@en,
-        "Sistema de refrigeración"@es ;
-    rdfs:subClassOf ind:Subsystem .
-
-ind:Counterweight a owl:Class ;
-    rdfs:label "Counterweight"@en,
-        "Contrapeso"@es ;
-    rdfs:subClassOf ind:MotionComponent .
-
-ind:Coupling a owl:Class ;
-    rdfs:label "Coupling"@en,
-        "Acoplamiento"@es ;
-    rdfs:subClassOf ind:Component .
-
-ind:ElectricMotor a owl:Class ;
-    rdfs:label "ElectricMotor"@en,
-        "Motor eléctrico"@es ;
-    rdfs:subClassOf ind:Motor .
-
-ind:ElectricalCabinet a owl:Class ;
-    rdfs:label "ElectricalCabinet"@en,
-        "Armario eléctrico"@es ;
-    rdfs:subClassOf ind:ElectricalComponent .
-
-ind:EmergencyStopButton a owl:Class ;
-    rdfs:label "EmergencyStopButton"@en,
-        "Pulsador de parada de emergencia"@es ;
-    rdfs:subClassOf ind:ElectricalComponent,
-        ind:SafetyComponent .
-
-ind:Filter a owl:Class ;
-    rdfs:label "Filter"@en,
-        "Filtro"@es ;
-    rdfs:subClassOf ind:Component .
-
-ind:FilterRegulator a owl:Class ;
-    rdfs:label "FilterRegulator"@en,
-        "Filtro regulador"@es ;
-    rdfs:subClassOf ind:PneumaticComponent .
-
-ind:GuideCarriage a owl:Class ;
-    rdfs:label "GuideCarriage"@en,
-        "Patín de guía"@es ;
-    rdfs:subClassOf ind:MotionComponent .
-
-ind:HumanMachineInterface a owl:Class ;
-    rdfs:label "HumanMachineInterface"@en,
-        "Interfaz hombre-máquina"@es ;
-    rdfs:subClassOf ind:ControlComponent .
-
-ind:HydraulicLock a owl:Class ;
-    rdfs:label "HydraulicLock"@en,
-        "Bloqueo hidráulico"@es ;
-    rdfs:subClassOf ind:HydraulicComponent .
-
-ind:HydraulicReservoir a owl:Class ;
-    rdfs:label "HydraulicReservoir"@en,
-        "Depósito hidráulico"@es ;
-    rdfs:subClassOf ind:HydraulicComponent,
-        ind:Reservoir .
-
-ind:HydraulicSystem a owl:Class ;
-    rdfs:label "HydraulicSystem"@en,
-        "Sistema hidráulico"@es ;
-    rdfs:subClassOf ind:Subsystem .
-
-ind:IndexingBase a owl:Class ;
-    rdfs:label "IndexingBase"@en,
-        "Base de indexado"@es ;
-    rdfs:subClassOf ind:StructuralComponent .
-
-ind:IndexingTable a owl:Class ;
-    rdfs:label "IndexingTable"@en,
-        "Plato divisor"@es ;
-    rdfs:subClassOf ind:MotionComponent .
-
-ind:LevelSensor a owl:Class ;
-    rdfs:label "LevelSensor"@en,
-        "Sensor de nivel"@es ;
-    rdfs:subClassOf ind:Sensor .
-
-ind:LevelTemperatureIndicator a owl:Class ;
-    rdfs:label "LevelTemperatureIndicator"@en,
-        "Indicador de nivel y temperatura"@es ;
-    rdfs:subClassOf ind:MeasurementDevice .
-
-ind:LinearGuide a owl:Class ;
-    rdfs:label "LinearGuide"@en,
-        "Guía lineal"@es ;
-    rdfs:subClassOf ind:MotionComponent .
-
-ind:LinearScale a owl:Class ;
-    rdfs:label "LinearScale"@en,
-        "Regla lineal"@es ;
-    rdfs:subClassOf ind:Sensor .
-
-ind:LubricantReservoir a owl:Class ;
-    rdfs:label "LubricantReservoir"@en,
-        "Depósito de lubricante"@es ;
-    rdfs:subClassOf ind:LubricationComponent,
-        ind:Reservoir .
-
-ind:LubricationUnit a owl:Class ;
-    rdfs:label "LubricationUnit"@en,
-        "Central de engrase"@es ;
-    rdfs:subClassOf ind:LubricationComponent .
-
-ind:MachineBase a owl:Class ;
-    rdfs:label "MachineBase"@en,
-        "Zócalo de máquina"@es ;
-    rdfs:subClassOf ind:StructuralComponent .
-
-ind:MachineColumn a owl:Class ;
-    rdfs:label "MachineColumn"@en,
-        "Columna de máquina"@es ;
-    rdfs:subClassOf ind:StructuralComponent .
-
-ind:MachineEnclosure a owl:Class ;
-    rdfs:label "MachineEnclosure"@en,
-        "Carenado"@es ;
-    rdfs:subClassOf ind:StructuralComponent .
-
-ind:MainSwitch a owl:Class ;
-    rdfs:label "MainSwitch"@en,
-        "Interruptor general"@es ;
-    rdfs:subClassOf ind:ElectricalComponent .
-
-ind:ManualLubricationSystem a owl:Class ;
-    rdfs:label "ManualLubricationSystem"@en,
-        "Sistema de engrase manual"@es ;
-    rdfs:subClassOf ind:LubricationSystem .
-
-ind:ManualValve a owl:Class ;
-    rdfs:label "ManualValve"@en,
-        "Válvula manual"@es ;
-    rdfs:subClassOf ind:Valve .
-
-ind:OperatorControlPanel a owl:Class ;
-    rdfs:label "OperatorControlPanel"@en,
-        "Botonera de operación"@es ;
-    rdfs:subClassOf ind:ControlComponent .
-
-ind:PLC a owl:Class ;
-    rdfs:label "PLC"@en,
-        "Controlador lógico programable"@es ;
-    rdfs:subClassOf ind:ControlComponent .
-
-ind:PistonPump a owl:Class ;
-    rdfs:label "PistonPump"@en,
-        "Bomba de pistones"@es ;
-    rdfs:subClassOf ind:HydraulicComponent,
-        ind:Pump .
-
-ind:Platform a owl:Class ;
-    rdfs:label "Platform"@en,
-        "Plataforma"@es ;
-    rdfs:subClassOf ind:StructuralComponent .
-
-ind:PneumaticCylinder a owl:Class ;
-    rdfs:label "PneumaticCylinder"@en,
-        "Cilindro neumático"@es ;
-    rdfs:subClassOf ind:Actuator,
-        ind:PneumaticComponent .
-
-ind:PneumaticLubricator a owl:Class ;
-    rdfs:label "PneumaticLubricator"@en,
-        "Lubricador neumático"@es ;
-    rdfs:subClassOf ind:LubricationComponent,
-        ind:PneumaticComponent .
-
-ind:PneumaticSystem a owl:Class ;
-    rdfs:label "PneumaticSystem"@en,
-        "Sistema neumático"@es ;
-    rdfs:subClassOf ind:Subsystem .
-
-ind:PressureGauge a owl:Class ;
-    rdfs:label "PressureGauge"@en,
-        "Manómetro"@es ;
-    rdfs:subClassOf ind:MeasurementDevice .
-
-ind:PressureReducingValve a owl:Class ;
-    rdfs:label "PressureReducingValve"@en,
-        "Reductora de presión"@es ;
-    rdfs:subClassOf ind:Valve .
-
-ind:PressureRegulator a owl:Class ;
-    rdfs:label "PressureRegulator"@en,
-        "Regulador de presión"@es ;
-    rdfs:subClassOf ind:FluidPowerComponent .
-
-ind:PressureSwitch a owl:Class ;
-    rdfs:label "PressureSwitch"@en,
-        "Presostato"@es ;
-    rdfs:subClassOf ind:Sensor .
-
-ind:RackAndPinionDrive a owl:Class ;
-    rdfs:label "RackAndPinionDrive"@en,
-        "Accionamiento piñón-cremallera"@es ;
-    rdfs:subClassOf ind:MotionComponent .
-
-ind:RemovablePanel a owl:Class ;
-    rdfs:label "RemovablePanel"@en,
-        "Panel desmontable"@es ;
-    rdfs:subClassOf ind:StructuralComponent .
-
-ind:SafetyController a owl:Class ;
-    rdfs:label "SafetyController"@en,
-        "Controlador de seguridad"@es ;
-    rdfs:subClassOf ind:ControlComponent,
-        ind:SafetyComponent .
-
-ind:SensorAssembly a owl:Class ;
-    rdfs:label "SensorAssembly"@en,
-        "Conjunto de sensores"@es ;
-    rdfs:subClassOf ind:Sensor .
-
-ind:ServoMotor a owl:Class ;
-    rdfs:label "ServoMotor"@en,
-        "Servomotor"@es ;
-    rdfs:subClassOf ind:Motor .
-
-ind:Silencer a owl:Class ;
-    rdfs:label "Silencer"@en,
-        "Silenciador"@es ;
-    rdfs:subClassOf ind:PneumaticComponent .
-
-ind:SlidingDoor a owl:Class ;
-    rdfs:label "SlidingDoor"@en,
-        "Puerta corredera"@es ;
-    rdfs:subClassOf ind:StructuralComponent .
-
-ind:SolenoidValve a owl:Class ;
-    rdfs:label "SolenoidValve"@en,
-        "Electroválvula"@es ;
-    rdfs:subClassOf ind:Valve .
-
-ind:VibrationIsolator a owl:Class ;
-    rdfs:label "VibrationIsolator"@en,
-        "Elemento antivibratorio"@es ;
-    rdfs:subClassOf ind:StructuralComponent .
-
-ind:WorkpieceCarrier a owl:Class ;
-    rdfs:label "WorkpieceCarrier"@en,
-        "Carro porta-piezas"@es ;
-    rdfs:subClassOf ind:MotionComponent .
-
-ind:hasPart a owl:ObjectProperty ;
-    rdfs:label "has part"@en,
-        "tiene parte"@es ;
-    rdfs:domain ind:IndustrialAsset ;
-    rdfs:range ind:Component ;
-    owl:inverseOf ind:partOf .
-
-ind:CoolingComponent a owl:Class ;
-    rdfs:label "CoolingComponent"@en,
-        "Componente de refrigeración"@es ;
-    rdfs:subClassOf ind:Component .
-
-ind:Machine a owl:Class ;
-    rdfs:label "Machine"@en,
-        "Máquina"@es ;
-    rdfs:subClassOf ind:IndustrialAsset .
-
-ind:MachineTool a owl:Class ;
-    rdfs:label "MachineTool"@en,
-        "Máquina-herramienta"@es ;
-    rdfs:subClassOf ind:Machine .
-
-ind:Pump a owl:Class ;
-    rdfs:label "Pump"@en,
-        "Bomba"@es ;
-    rdfs:subClassOf ind:FluidPowerComponent .
-
-ind:partOf a owl:ObjectProperty ;
-    rdfs:label "part of"@en,
-        "parte de"@es ;
-    rdfs:domain ind:Component ;
-    rdfs:range ind:IndustrialAsset .
-
-ind:Actuator a owl:Class ;
-    rdfs:label "Actuator"@en,
-        "Actuador"@es ;
-    rdfs:subClassOf ind:Component .
-
-ind:LubricationSystem a owl:Class ;
-    rdfs:label "LubricationSystem"@en,
-        "Sistema de engrase"@es ;
-    rdfs:subClassOf ind:Subsystem .
-
-ind:MeasurementDevice a owl:Class ;
-    rdfs:label "MeasurementDevice"@en,
-        "Dispositivo de medida"@es ;
-    rdfs:subClassOf ind:Sensor .
-
-ind:Motor a owl:Class ;
-    rdfs:label "Motor"@en,
-        "Motor"@es ;
-    rdfs:subClassOf ind:Actuator .
-
-ind:SafetyComponent a owl:Class ;
-    rdfs:label "SafetyComponent"@en,
-        "Componente de seguridad"@es ;
-    rdfs:subClassOf ind:Component .
-
-ind:ElectricalComponent a owl:Class ;
-    rdfs:label "ElectricalComponent"@en,
-        "Componente eléctrico"@es ;
-    rdfs:subClassOf ind:Component .
-
-ind:HydraulicComponent a owl:Class ;
-    rdfs:label "HydraulicComponent"@en,
-        "Componente hidráulico"@es ;
-    rdfs:subClassOf ind:FluidPowerComponent .
-
-ind:LubricationComponent a owl:Class ;
-    rdfs:label "LubricationComponent"@en,
-        "Componente de lubricación"@es ;
-    rdfs:subClassOf ind:Component .
-
-ind:Reservoir a owl:Class ;
-    rdfs:label "Reservoir"@en,
-        "Depósito"@es ;
-    rdfs:subClassOf ind:Component .
-
-ind:Valve a owl:Class ;
-    rdfs:label "Valve"@en,
-        "Válvula"@es ;
-    rdfs:subClassOf ind:FluidPowerComponent .
-
-ind:IndustrialAsset a owl:Class ;
-    rdfs:label "IndustrialAsset"@en,
-        "Activo industrial"@es .
-
-ind:ControlComponent a owl:Class ;
-    rdfs:label "ControlComponent"@en,
-        "Componente de control"@es ;
-    rdfs:subClassOf ind:Component .
-
-ind:FluidPowerComponent a owl:Class ;
-    rdfs:label "FluidPowerComponent"@en,
-        "Componente de potencia fluida"@es ;
-    rdfs:subClassOf ind:Component .
-
-ind:PneumaticComponent a owl:Class ;
-    rdfs:label "PneumaticComponent"@en,
-        "Componente neumático"@es ;
-    rdfs:subClassOf ind:FluidPowerComponent .
-
-ind:Sensor a owl:Class ;
-    rdfs:label "Sensor"@en,
-        "Sensor"@es ;
-    rdfs:subClassOf ind:Component .
-
-ind:Subsystem a owl:Class ;
-    rdfs:label "Subsystem"@en,
-        "Subsistema"@es ;
-    rdfs:subClassOf ind:Component .
-
-ind:MotionComponent a owl:Class ;
-    rdfs:label "MotionComponent"@en,
-        "Componente de movimiento"@es ;
-    rdfs:subClassOf ind:Component .
-
-ind:StructuralComponent a owl:Class ;
-    rdfs:label "StructuralComponent"@en,
-        "Componente estructural"@es ;
-    rdfs:subClassOf ind:Component .
-
-ind:Component a owl:Class ;
-    rdfs:label "Component"@en,
-        "Componente"@es ;
-    rdfs:subClassOf ind:IndustrialAsset .
-
-
-
-@prefix ind: <https://cfaa.eus/ontology/industrial#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <https://cfaa.eus/ontology/industrial> .
 
-# Extensión para propiedades de activos y mapeos a InfluxDB 2.x.
-# Las instancias, nombres físicos y relaciones concretas están en brochadora-kg.ttl.
+<https://cfaa.eus/ontology/industrial> rdf:type owl:Ontology ;
+                                        dcterms:description "Minimal industrial ontology for semantic lifting of AAS HierarchicalStructures. Version 0.1 intentionally models only concepts required by the EKIN broaching-machine hierarchy."@en ;
+                                        dcterms:title "CFAA Industrial Ontology"@en ,
+                                                      "Ontología industrial CFAA"@es ;
+                                        owl:versionInfo "0.1" .
 
-ind:AssetProperty a owl:Class ;
-    rdfs:label "Propiedad de un activo"@es, "Asset property"@en ;
-    rdfs:comment "Propiedad específica de un activo industrial. Sus valores temporales pueden localizarse mediante un mapeo externo."@es .
+#################################################################
+#    Annotation properties
+#################################################################
 
-ind:TorqueProperty a owl:Class ;
-    rdfs:subClassOf ind:AssetProperty ;
-    rdfs:label "Propiedad de par"@es, "Par motor"@es, "Torque property"@en, "Torque"@en ;
-    rdfs:comment "Propiedad de par asociada a un activo. La unidad, escala y naturaleza de la señal se documentan cuando se conocen; el nombre del field no las determina."@es .
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
 
-ind:TimeSeriesBinding a owl:Class ;
-    rdfs:label "Mapeo de serie temporal"@es, "Time series binding"@en ;
-    rdfs:comment "Localización de valores temporales mediante origen, measurement y field. Si el origen requiere seleccionar tags, dichos filtros deben añadirse al mapeo antes de distinguir series concretas."@es .
 
-ind:InfluxDBSource a owl:Class ;
-    rdfs:label "Origen de datos InfluxDB"@es, "InfluxDB data source"@en ;
-    rdfs:comment "Identificación lógica de un origen InfluxDB y su bucket. La aplicación resuelve la conexión, organización y credenciales mediante esta identificación."@es .
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
 
-# Object properties: enlaces entre individuos, no entre clases.
-ind:hasProperty a owl:ObjectProperty ;
-    rdfs:label "tiene propiedad"@es, "has property"@en ;
-    rdfs:domain ind:IndustrialAsset ;
-    rdfs:range ind:AssetProperty ;
-    owl:inverseOf ind:isPropertyOf .
 
-ind:isPropertyOf a owl:ObjectProperty ;
-    rdfs:label "es propiedad de"@es, "is property of"@en ;
-    rdfs:domain ind:AssetProperty ;
-    rdfs:range ind:IndustrialAsset .
+#################################################################
+#    Object Properties
+#################################################################
 
-ind:hasTimeSeriesBinding a owl:ObjectProperty ;
-    rdfs:label "tiene mapeo de serie temporal"@es, "has time series binding"@en ;
-    rdfs:domain ind:AssetProperty ;
-    rdfs:range ind:TimeSeriesBinding .
+###  https://cfaa.eus/ontology/industrial#hasPart
+ind:hasPart rdf:type owl:ObjectProperty ;
+            owl:inverseOf ind:partOf ;
+            rdf:type owl:TransitiveProperty ;
+            rdfs:domain ind:IndustrialAsset ;
+            rdfs:range ind:Component ;
+            rdfs:label "has part"@en ,
+                       "tiene parte"@es .
 
-ind:source a owl:ObjectProperty ;
-    rdfs:label "tiene origen de datos"@es, "has data source"@en ;
-    rdfs:domain ind:TimeSeriesBinding ;
-    rdfs:range ind:InfluxDBSource .
 
-# Datatype properties: nombres físicos exactos, sensibles a mayúsculas.
-ind:bucketName a owl:DatatypeProperty ;
-    rdfs:label "nombre del bucket"@es, "bucket name"@en ;
-    rdfs:domain ind:InfluxDBSource ;
-    rdfs:range xsd:string .
+###  https://cfaa.eus/ontology/industrial#hasProperty
+ind:hasProperty rdf:type owl:ObjectProperty ;
+                owl:inverseOf ind:isPropertyOf ;
+                rdfs:domain ind:IndustrialAsset ;
+                rdfs:range ind:AssetProperty ;
+                rdfs:label "has property"@en ,
+                           "tiene propiedad"@es .
 
-ind:measurementName a owl:DatatypeProperty ;
-    rdfs:label "nombre del measurement"@es, "measurement name"@en ;
-    rdfs:domain ind:TimeSeriesBinding ;
-    rdfs:range xsd:string .
 
-ind:fieldName a owl:DatatypeProperty ;
-    rdfs:label "nombre del field"@es, "field name"@en ;
-    rdfs:domain ind:TimeSeriesBinding ;
-    rdfs:range xsd:string ;
-    rdfs:comment "Clave física exacta del field en InfluxDB; en Flux se compara con _field. No es el nombre semántico de la propiedad."@es .
+###  https://cfaa.eus/ontology/industrial#hasTimeSeriesBinding
+ind:hasTimeSeriesBinding rdf:type owl:ObjectProperty ;
+                         rdfs:domain ind:AssetProperty ;
+                         rdfs:range ind:TimeSeriesBinding ;
+                         rdfs:label "has time series binding"@en ,
+                                    "tiene mapeo de serie temporal"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#isPropertyOf
+ind:isPropertyOf rdf:type owl:ObjectProperty ;
+                 rdfs:domain ind:AssetProperty ;
+                 rdfs:range ind:IndustrialAsset ;
+                 rdfs:label "es propiedad de"@es ,
+                            "is property of"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#partOf
+ind:partOf rdf:type owl:ObjectProperty ,
+                    owl:TransitiveProperty ;
+           rdfs:domain ind:Component ;
+           rdfs:range ind:IndustrialAsset ;
+           rdfs:label "part of"@en ,
+                      "parte de"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#source
+ind:source rdf:type owl:ObjectProperty ;
+           rdfs:domain ind:TimeSeriesBinding ;
+           rdfs:range ind:InfluxDBSource ;
+           rdfs:label "has data source"@en ,
+                      "tiene origen de datos"@es .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://cfaa.eus/ontology/industrial#bucketName
+ind:bucketName rdf:type owl:DatatypeProperty ;
+               rdfs:domain ind:InfluxDBSource ;
+               rdfs:range xsd:string ;
+               rdfs:label "bucket name"@en ,
+                          "nombre del bucket"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#fieldName
+ind:fieldName rdf:type owl:DatatypeProperty ;
+              rdfs:domain ind:TimeSeriesBinding ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Clave física exacta del field en InfluxDB; en Flux se compara con _field. No es el nombre semántico de la propiedad."@es ;
+              rdfs:label "field name"@en ,
+                         "nombre del field"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#measurementName
+ind:measurementName rdf:type owl:DatatypeProperty ;
+                    rdfs:domain ind:TimeSeriesBinding ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "measurement name"@en ,
+                               "nombre del measurement"@es .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://cfaa.eus/ontology/industrial#AccessHatch
+ind:AccessHatch rdf:type owl:Class ;
+                rdfs:subClassOf ind:StructuralComponent ;
+                rdfs:label "AccessHatch"@en ,
+                           "Trampilla de acceso"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#Actuator
+ind:Actuator rdf:type owl:Class ;
+             rdfs:subClassOf ind:Component ;
+             rdfs:label "Actuador"@es ,
+                        "Actuator"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#AirDryer
+ind:AirDryer rdf:type owl:Class ;
+             rdfs:subClassOf ind:PneumaticComponent ;
+             rdfs:label "AirDryer"@en ,
+                        "Secador de aire"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#AssetProperty
+ind:AssetProperty rdf:type owl:Class ;
+                  rdfs:comment "Propiedad específica de un activo industrial. Sus valores temporales pueden localizarse mediante un mapeo externo."@es ;
+                  rdfs:label "Asset property"@en ,
+                             "Propiedad de un activo"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#AutomaticLubricationSystem
+ind:AutomaticLubricationSystem rdf:type owl:Class ;
+                               rdfs:subClassOf ind:LubricationSystem ;
+                               rdfs:label "AutomaticLubricationSystem"@en ,
+                                          "Sistema de engrase automático"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#BroachCarrier
+ind:BroachCarrier rdf:type owl:Class ;
+                  rdfs:subClassOf ind:MotionComponent ;
+                  rdfs:label "BroachCarrier"@en ,
+                             "Carro porta-brochas"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#BroachingMachine
+ind:BroachingMachine rdf:type owl:Class ;
+                     rdfs:subClassOf ind:MachineTool ;
+                     rdfs:label "BroachingMachine"@en ,
+                                "Brochadora"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#Brush
+ind:Brush rdf:type owl:Class ;
+          rdfs:subClassOf ind:Component ;
+          rdfs:label "Brush"@en ,
+                     "Cepillo"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#CNC
+ind:CNC rdf:type owl:Class ;
+        rdfs:subClassOf ind:ControlComponent ;
+        rdfs:label "CNC"@en ,
+                   "Control numérico computarizado"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#CleaningSystem
+ind:CleaningSystem rdf:type owl:Class ;
+                   rdfs:subClassOf ind:Subsystem ;
+                   rdfs:label "CleaningSystem"@en ,
+                              "Sistema de limpieza"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#Component
+ind:Component rdf:type owl:Class ;
+              rdfs:subClassOf ind:IndustrialAsset ;
+              rdfs:label "Component"@en ,
+                         "Componente"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#ControlComponent
+ind:ControlComponent rdf:type owl:Class ;
+                     rdfs:subClassOf ind:Component ;
+                     rdfs:label "Componente de control"@es ,
+                                "ControlComponent"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#CoolantReservoir
+ind:CoolantReservoir rdf:type owl:Class ;
+                     rdfs:subClassOf ind:CoolingComponent ,
+                                     ind:Reservoir ;
+                     rdfs:label "CoolantReservoir"@en ,
+                                "Depósito de refrigeración"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#CoolingComponent
+ind:CoolingComponent rdf:type owl:Class ;
+                     rdfs:subClassOf ind:Component ;
+                     rdfs:label "Componente de refrigeración"@es ,
+                                "CoolingComponent"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#CoolingSystem
+ind:CoolingSystem rdf:type owl:Class ;
+                  rdfs:subClassOf ind:Subsystem ;
+                  rdfs:label "CoolingSystem"@en ,
+                             "Sistema de refrigeración"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#Counterweight
+ind:Counterweight rdf:type owl:Class ;
+                  rdfs:subClassOf ind:MotionComponent ;
+                  rdfs:label "Contrapeso"@es ,
+                             "Counterweight"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#Coupling
+ind:Coupling rdf:type owl:Class ;
+             rdfs:subClassOf ind:Component ;
+             rdfs:label "Acoplamiento"@es ,
+                        "Coupling"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#ElectricMotor
+ind:ElectricMotor rdf:type owl:Class ;
+                  rdfs:subClassOf ind:Motor ;
+                  rdfs:label "ElectricMotor"@en ,
+                             "Motor eléctrico"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#ElectricalCabinet
+ind:ElectricalCabinet rdf:type owl:Class ;
+                      rdfs:subClassOf ind:ElectricalComponent ;
+                      rdfs:label "Armario eléctrico"@es ,
+                                 "ElectricalCabinet"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#ElectricalComponent
+ind:ElectricalComponent rdf:type owl:Class ;
+                        rdfs:subClassOf ind:Component ;
+                        rdfs:label "Componente eléctrico"@es ,
+                                   "ElectricalComponent"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#EmergencyStopButton
+ind:EmergencyStopButton rdf:type owl:Class ;
+                        rdfs:subClassOf ind:ElectricalComponent ,
+                                        ind:SafetyComponent ;
+                        rdfs:label "EmergencyStopButton"@en ,
+                                   "Pulsador de parada de emergencia"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#Filter
+ind:Filter rdf:type owl:Class ;
+           rdfs:subClassOf ind:Component ;
+           rdfs:label "Filter"@en ,
+                      "Filtro"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#FilterRegulator
+ind:FilterRegulator rdf:type owl:Class ;
+                    rdfs:subClassOf ind:PneumaticComponent ;
+                    rdfs:label "FilterRegulator"@en ,
+                               "Filtro regulador"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#FluidPowerComponent
+ind:FluidPowerComponent rdf:type owl:Class ;
+                        rdfs:subClassOf ind:Component ;
+                        rdfs:label "Componente de potencia fluida"@es ,
+                                   "FluidPowerComponent"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#GuideCarriage
+ind:GuideCarriage rdf:type owl:Class ;
+                  rdfs:subClassOf ind:MotionComponent ;
+                  rdfs:label "GuideCarriage"@en ,
+                             "Patín de guía"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#HumanMachineInterface
+ind:HumanMachineInterface rdf:type owl:Class ;
+                          rdfs:subClassOf ind:ControlComponent ;
+                          rdfs:label "HumanMachineInterface"@en ,
+                                     "Interfaz hombre-máquina"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#HydraulicComponent
+ind:HydraulicComponent rdf:type owl:Class ;
+                       rdfs:subClassOf ind:FluidPowerComponent ;
+                       rdfs:label "Componente hidráulico"@es ,
+                                  "HydraulicComponent"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#HydraulicLock
+ind:HydraulicLock rdf:type owl:Class ;
+                  rdfs:subClassOf ind:HydraulicComponent ;
+                  rdfs:label "Bloqueo hidráulico"@es ,
+                             "HydraulicLock"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#HydraulicReservoir
+ind:HydraulicReservoir rdf:type owl:Class ;
+                       rdfs:subClassOf ind:HydraulicComponent ,
+                                       ind:Reservoir ;
+                       rdfs:label "Depósito hidráulico"@es ,
+                                  "HydraulicReservoir"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#HydraulicSystem
+ind:HydraulicSystem rdf:type owl:Class ;
+                    rdfs:subClassOf ind:Subsystem ;
+                    rdfs:label "HydraulicSystem"@en ,
+                               "Sistema hidráulico"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#IndexingBase
+ind:IndexingBase rdf:type owl:Class ;
+                 rdfs:subClassOf ind:StructuralComponent ;
+                 rdfs:label "Base de indexado"@es ,
+                            "IndexingBase"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#IndexingTable
+ind:IndexingTable rdf:type owl:Class ;
+                  rdfs:subClassOf ind:MotionComponent ;
+                  rdfs:label "IndexingTable"@en ,
+                             "Plato divisor"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#IndustrialAsset
+ind:IndustrialAsset rdf:type owl:Class ;
+                    rdfs:label "Activo industrial"@es ,
+                               "IndustrialAsset"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#InfluxDBSource
+ind:InfluxDBSource rdf:type owl:Class ;
+                   rdfs:comment "Identificación lógica de un origen InfluxDB y su bucket. La aplicación resuelve la conexión, organización y credenciales mediante esta identificación."@es ;
+                   rdfs:label "InfluxDB data source"@en ,
+                              "Origen de datos InfluxDB"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#LevelSensor
+ind:LevelSensor rdf:type owl:Class ;
+                rdfs:subClassOf ind:Sensor ;
+                rdfs:label "LevelSensor"@en ,
+                           "Sensor de nivel"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#LevelTemperatureIndicator
+ind:LevelTemperatureIndicator rdf:type owl:Class ;
+                              rdfs:subClassOf ind:MeasurementDevice ;
+                              rdfs:label "Indicador de nivel y temperatura"@es ,
+                                         "LevelTemperatureIndicator"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#LinearGuide
+ind:LinearGuide rdf:type owl:Class ;
+                rdfs:subClassOf ind:MotionComponent ;
+                rdfs:label "Guía lineal"@es ,
+                           "LinearGuide"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#LinearScale
+ind:LinearScale rdf:type owl:Class ;
+                rdfs:subClassOf ind:Sensor ;
+                rdfs:label "LinearScale"@en ,
+                           "Regla lineal"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#LubricantReservoir
+ind:LubricantReservoir rdf:type owl:Class ;
+                       rdfs:subClassOf ind:LubricationComponent ,
+                                       ind:Reservoir ;
+                       rdfs:label "Depósito de lubricante"@es ,
+                                  "LubricantReservoir"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#LubricationComponent
+ind:LubricationComponent rdf:type owl:Class ;
+                         rdfs:subClassOf ind:Component ;
+                         rdfs:label "Componente de lubricación"@es ,
+                                    "LubricationComponent"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#LubricationSystem
+ind:LubricationSystem rdf:type owl:Class ;
+                      rdfs:subClassOf ind:Subsystem ;
+                      rdfs:label "LubricationSystem"@en ,
+                                 "Sistema de engrase"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#LubricationUnit
+ind:LubricationUnit rdf:type owl:Class ;
+                    rdfs:subClassOf ind:LubricationComponent ;
+                    rdfs:label "Central de engrase"@es ,
+                               "LubricationUnit"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#Machine
+ind:Machine rdf:type owl:Class ;
+            rdfs:subClassOf ind:IndustrialAsset ;
+            rdfs:label "Machine"@en ,
+                       "Máquina"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#MachineBase
+ind:MachineBase rdf:type owl:Class ;
+                rdfs:subClassOf ind:StructuralComponent ;
+                rdfs:label "MachineBase"@en ,
+                           "Zócalo de máquina"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#MachineColumn
+ind:MachineColumn rdf:type owl:Class ;
+                  rdfs:subClassOf ind:StructuralComponent ;
+                  rdfs:label "Columna de máquina"@es ,
+                             "MachineColumn"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#MachineEnclosure
+ind:MachineEnclosure rdf:type owl:Class ;
+                     rdfs:subClassOf ind:StructuralComponent ;
+                     rdfs:label "Carenado"@es ,
+                                "MachineEnclosure"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#MachineTool
+ind:MachineTool rdf:type owl:Class ;
+                rdfs:subClassOf ind:Machine ;
+                rdfs:label "MachineTool"@en ,
+                           "Máquina-herramienta"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#MainSwitch
+ind:MainSwitch rdf:type owl:Class ;
+               rdfs:subClassOf ind:ElectricalComponent ;
+               rdfs:label "Interruptor general"@es ,
+                          "MainSwitch"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#ManualLubricationSystem
+ind:ManualLubricationSystem rdf:type owl:Class ;
+                            rdfs:subClassOf ind:LubricationSystem ;
+                            rdfs:label "ManualLubricationSystem"@en ,
+                                       "Sistema de engrase manual"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#ManualValve
+ind:ManualValve rdf:type owl:Class ;
+                rdfs:subClassOf ind:Valve ;
+                rdfs:label "ManualValve"@en ,
+                           "Válvula manual"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#MeasurementDevice
+ind:MeasurementDevice rdf:type owl:Class ;
+                      rdfs:subClassOf ind:Sensor ;
+                      rdfs:label "Dispositivo de medida"@es ,
+                                 "MeasurementDevice"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#MotionComponent
+ind:MotionComponent rdf:type owl:Class ;
+                    rdfs:subClassOf ind:Component ;
+                    rdfs:label "Componente de movimiento"@es ,
+                               "MotionComponent"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#Motor
+ind:Motor rdf:type owl:Class ;
+          rdfs:subClassOf ind:Actuator ;
+          rdfs:label "Motor"@en ,
+                     "Motor"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#OperatorControlPanel
+ind:OperatorControlPanel rdf:type owl:Class ;
+                         rdfs:subClassOf ind:ControlComponent ;
+                         rdfs:label "Botonera de operación"@es ,
+                                    "OperatorControlPanel"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#PLC
+ind:PLC rdf:type owl:Class ;
+        rdfs:subClassOf ind:ControlComponent ;
+        rdfs:label "Controlador lógico programable"@es ,
+                   "PLC"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#PistonPump
+ind:PistonPump rdf:type owl:Class ;
+               rdfs:subClassOf ind:HydraulicComponent ,
+                               ind:Pump ;
+               rdfs:label "Bomba de pistones"@es ,
+                          "PistonPump"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#Platform
+ind:Platform rdf:type owl:Class ;
+             rdfs:subClassOf ind:StructuralComponent ;
+             rdfs:label "Plataforma"@es ,
+                        "Platform"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#PneumaticComponent
+ind:PneumaticComponent rdf:type owl:Class ;
+                       rdfs:subClassOf ind:FluidPowerComponent ;
+                       rdfs:label "Componente neumático"@es ,
+                                  "PneumaticComponent"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#PneumaticCylinder
+ind:PneumaticCylinder rdf:type owl:Class ;
+                      rdfs:subClassOf ind:Actuator ,
+                                      ind:PneumaticComponent ;
+                      rdfs:label "Cilindro neumático"@es ,
+                                 "PneumaticCylinder"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#PneumaticLubricator
+ind:PneumaticLubricator rdf:type owl:Class ;
+                        rdfs:subClassOf ind:LubricationComponent ,
+                                        ind:PneumaticComponent ;
+                        rdfs:label "Lubricador neumático"@es ,
+                                   "PneumaticLubricator"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#PneumaticSystem
+ind:PneumaticSystem rdf:type owl:Class ;
+                    rdfs:subClassOf ind:Subsystem ;
+                    rdfs:label "PneumaticSystem"@en ,
+                               "Sistema neumático"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#PressureGauge
+ind:PressureGauge rdf:type owl:Class ;
+                  rdfs:subClassOf ind:MeasurementDevice ;
+                  rdfs:label "Manómetro"@es ,
+                             "PressureGauge"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#PressureReducingValve
+ind:PressureReducingValve rdf:type owl:Class ;
+                          rdfs:subClassOf ind:Valve ;
+                          rdfs:label "PressureReducingValve"@en ,
+                                     "Reductora de presión"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#PressureRegulator
+ind:PressureRegulator rdf:type owl:Class ;
+                      rdfs:subClassOf ind:FluidPowerComponent ;
+                      rdfs:label "PressureRegulator"@en ,
+                                 "Regulador de presión"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#PressureSwitch
+ind:PressureSwitch rdf:type owl:Class ;
+                   rdfs:subClassOf ind:Sensor ;
+                   rdfs:label "Presostato"@es ,
+                              "PressureSwitch"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#Pump
+ind:Pump rdf:type owl:Class ;
+         rdfs:subClassOf ind:FluidPowerComponent ;
+         rdfs:label "Bomba"@es ,
+                    "Pump"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#RackAndPinionDrive
+ind:RackAndPinionDrive rdf:type owl:Class ;
+                       rdfs:subClassOf ind:MotionComponent ;
+                       rdfs:label "Accionamiento piñón-cremallera"@es ,
+                                  "RackAndPinionDrive"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#RemovablePanel
+ind:RemovablePanel rdf:type owl:Class ;
+                   rdfs:subClassOf ind:StructuralComponent ;
+                   rdfs:label "Panel desmontable"@es ,
+                              "RemovablePanel"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#Reservoir
+ind:Reservoir rdf:type owl:Class ;
+              rdfs:subClassOf ind:Component ;
+              rdfs:label "Depósito"@es ,
+                         "Reservoir"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#SafetyComponent
+ind:SafetyComponent rdf:type owl:Class ;
+                    rdfs:subClassOf ind:Component ;
+                    rdfs:label "Componente de seguridad"@es ,
+                               "SafetyComponent"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#SafetyController
+ind:SafetyController rdf:type owl:Class ;
+                     rdfs:subClassOf ind:ControlComponent ,
+                                     ind:SafetyComponent ;
+                     rdfs:label "Controlador de seguridad"@es ,
+                                "SafetyController"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#Sensor
+ind:Sensor rdf:type owl:Class ;
+           rdfs:subClassOf ind:Component ;
+           rdfs:label "Sensor"@en ,
+                      "Sensor"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#SensorAssembly
+ind:SensorAssembly rdf:type owl:Class ;
+                   rdfs:subClassOf ind:Sensor ;
+                   rdfs:label "Conjunto de sensores"@es ,
+                              "SensorAssembly"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#ServoMotor
+ind:ServoMotor rdf:type owl:Class ;
+               rdfs:subClassOf ind:Motor ;
+               rdfs:label "ServoMotor"@en ,
+                          "Servomotor"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#Silencer
+ind:Silencer rdf:type owl:Class ;
+             rdfs:subClassOf ind:PneumaticComponent ;
+             rdfs:label "Silencer"@en ,
+                        "Silenciador"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#SlidingDoor
+ind:SlidingDoor rdf:type owl:Class ;
+                rdfs:subClassOf ind:StructuralComponent ;
+                rdfs:label "Puerta corredera"@es ,
+                           "SlidingDoor"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#SolenoidValve
+ind:SolenoidValve rdf:type owl:Class ;
+                  rdfs:subClassOf ind:Valve ;
+                  rdfs:label "Electroválvula"@es ,
+                             "SolenoidValve"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#StructuralComponent
+ind:StructuralComponent rdf:type owl:Class ;
+                        rdfs:subClassOf ind:Component ;
+                        rdfs:label "Componente estructural"@es ,
+                                   "StructuralComponent"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#Subsystem
+ind:Subsystem rdf:type owl:Class ;
+              rdfs:subClassOf ind:Component ;
+              rdfs:label "Subsistema"@es ,
+                         "Subsystem"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#TimeSeriesBinding
+ind:TimeSeriesBinding rdf:type owl:Class ;
+                      rdfs:comment "Localización de valores temporales mediante origen, measurement y field. Si el origen requiere seleccionar tags, dichos filtros deben añadirse al mapeo antes de distinguir series concretas."@es ;
+                      rdfs:label "Mapeo de serie temporal"@es ,
+                                 "Time series binding"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#TorqueProperty
+ind:TorqueProperty rdf:type owl:Class ;
+                   rdfs:subClassOf ind:AssetProperty ;
+                   rdfs:comment "Propiedad de par asociada a un activo. La unidad, escala y naturaleza de la señal se documentan cuando se conocen; el nombre del field no las determina."@es ;
+                   rdfs:label "Par motor"@es ,
+                              "Propiedad de par"@es ,
+                              "Torque"@en ,
+                              "Torque property"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#Valve
+ind:Valve rdf:type owl:Class ;
+          rdfs:subClassOf ind:FluidPowerComponent ;
+          rdfs:label "Valve"@en ,
+                     "Válvula"@es .
+
+
+###  https://cfaa.eus/ontology/industrial#VibrationIsolator
+ind:VibrationIsolator rdf:type owl:Class ;
+                      rdfs:subClassOf ind:StructuralComponent ;
+                      rdfs:label "Elemento antivibratorio"@es ,
+                                 "VibrationIsolator"@en .
+
+
+###  https://cfaa.eus/ontology/industrial#WorkpieceCarrier
+ind:WorkpieceCarrier rdf:type owl:Class ;
+                     rdfs:subClassOf ind:MotionComponent ;
+                     rdfs:label "Carro porta-piezas"@es ,
+                                "WorkpieceCarrier"@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
