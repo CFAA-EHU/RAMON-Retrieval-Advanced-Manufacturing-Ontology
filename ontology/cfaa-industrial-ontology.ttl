@@ -357,6 +357,16 @@ ind:InfluxDBSource rdf:type owl:Class ;
                               "Origen de datos InfluxDB"@es .
 
 
+###  https://cfaa.eus/ontology/industrial/IntensityProperty
+ind:IntensityProperty rdf:type owl:Class ;
+                   rdfs:subClassOf ind:AssetProperty ;
+                   rdfs:comment "Propiedad de intensidad asociada a un activo. La unidad, escala y naturaleza de la señal se documentan cuando se conocen; el nombre del field no las determina."@es ;
+                   rdfs:label "Intensidad"@es ,
+                              "Propiedad de intensidad"@es ,
+                              "Intensity"@en ,
+                              "Intensity property"@en .
+
+
 ###  https://cfaa.eus/ontology/industrial/LevelSensor
 ind:LevelSensor rdf:type owl:Class ;
                 rdfs:subClassOf ind:Sensor ;
@@ -550,6 +560,26 @@ ind:PneumaticSystem rdf:type owl:Class ;
                                "Sistema neumático"@es .
 
 
+###  https://cfaa.eus/ontology/industrial/PositionProperty
+ind:PositionProperty rdf:type owl:Class ;
+                   rdfs:subClassOf ind:AssetProperty ;
+                   rdfs:comment "Propiedad de posición asociada a un activo. La unidad, escala y naturaleza de la señal se documentan cuando se conocen; el nombre del field no las determina."@es ;
+                   rdfs:label "Posición"@es ,
+                              "Propiedad de posición"@es ,
+                              "Position"@en ,
+                              "Position property"@en .
+
+
+###  https://cfaa.eus/ontology/industrial/PowerProperty
+ind:PowerProperty rdf:type owl:Class ;
+                   rdfs:subClassOf ind:AssetProperty ;
+                   rdfs:comment "Propiedad de potencia asociada a un activo. La unidad, escala y naturaleza de la señal se documentan cuando se conocen; el nombre del field no las determina."@es ;
+                   rdfs:label "Potencia"@es ,
+                              "Propiedad de potencia"@es ,
+                              "Power"@en ,
+                              "Power property"@en .
+
+
 ###  https://cfaa.eus/ontology/industrial/PressureGauge
 ind:PressureGauge rdf:type owl:Class ;
                   rdfs:subClassOf ind:MeasurementDevice ;
@@ -604,6 +634,16 @@ ind:Reservoir rdf:type owl:Class ;
               rdfs:subClassOf ind:Component ;
               rdfs:label "Depósito"@es ,
                          "Reservoir"@en .
+
+
+###  https://cfaa.eus/ontology/industrial/RotationSpeedProperty
+ind:RotationSpeedProperty rdf:type owl:Class ;
+                   rdfs:subClassOf ind:AssetProperty ;
+                   rdfs:comment "Propiedad de velocidad de rotación asociada a un activo. La unidad, escala y naturaleza de la señal se documentan cuando se conocen; el nombre del field no las determina."@es ;
+                   rdfs:label "Velocidad de rotación"@es ,
+                              "Propiedad de velocidad de rotación"@es ,
+                              "Rotation speed"@en ,
+                              "Rotation speed property"@en .
 
 
 ###  https://cfaa.eus/ontology/industrial/SafetyComponent

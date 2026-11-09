@@ -369,11 +369,13 @@ kg:N083 a ind:HumanMachineInterface ;
     rdfs:label "Panel operador / pantalla táctil FAGOR PC-21"@es ;
     dcterms:identifier "N083" .
 
-# Enlace de TORQUE1 al servomotor indicado por el usuario.
-@prefix ind: <https://cfaa.eus/ontology/industrial/> .
-@prefix kg: <https://cfaa.eus/kg/brochadora/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+# --------- ENLACES A INFLUX ---------
+# COMÚN PARA TODOS
+kg:InfluxDBEkin a ind:InfluxDBSource ;
+    rdfs:label "Origen lógico InfluxDB del bucket ekin"@es ;
+    ind:bucketName "ekin" .
 
+# Enlace de TORQUE1 al servomotor izquierdo 18M1.
 kg:N040 ind:hasProperty kg:TORQUE1Property .
 
 kg:TORQUE1Property a ind:TorqueProperty ;
@@ -387,10 +389,131 @@ kg:TORQUE1Binding a ind:TimeSeriesBinding ;
     ind:measurementName "fingerprintZ" ;
     ind:fieldName "TORQUE1" .
 
-kg:InfluxDBEkin a ind:InfluxDBSource ;
-    rdfs:label "Origen lógico InfluxDB del bucket ekin"@es ;
-    ind:bucketName "ekin" .
+# Enlace de TORQUE2 al servomotor derecho 19M1.
+kg:N041 ind:hasProperty kg:TORQUE2Property .
 
+kg:TORQUE2Property a ind:TorqueProperty ;
+    rdfs:label "Propiedad de par asociada a TORQUE2"@es ;
+    ind:isPropertyOf kg:N041 ;
+    ind:hasTimeSeriesBinding kg:TORQUE2Binding .
+
+kg:TORQUE2Binding a ind:TimeSeriesBinding ;
+    rdfs:label "Mapeo ekin / fingerprintZ / TORQUE2"@es ;
+    ind:source kg:InfluxDBEkin ;
+    ind:measurementName "fingerprintZ" ;
+    ind:fieldName "TORQUE2" .
+
+# Enlace de POWER1 al servomotor izquierdo.
+kg:N040 ind:hasProperty kg:POWER1Property .
+
+kg:POWER1Property a ind:PowerProperty ;
+    rdfs:label "Propiedad de potencia asociada a POWER1"@es ;
+    ind:isPropertyOf kg:N040 ;
+    ind:hasTimeSeriesBinding kg:POWER1Binding .
+
+kg:POWER1Binding a ind:TimeSeriesBinding ;
+    rdfs:label "Mapeo ekin / fingerprintZ / POWER1"@es ;
+    ind:source kg:InfluxDBEkin ;
+    ind:measurementName "fingerprintZ" ;
+    ind:fieldName "POWER1" .
+
+# Enlace de POWER2 al servomotor derecho.
+kg:N041 ind:hasProperty kg:POWER2Property .
+
+kg:POWER2Property a ind:PowerProperty ;
+    rdfs:label "Propiedad de potencia asociada a POWER2"@es ;
+    ind:isPropertyOf kg:N041 ;
+    ind:hasTimeSeriesBinding kg:POWER2Binding .
+
+kg:POWER2Binding a ind:TimeSeriesBinding ;
+    rdfs:label "Mapeo ekin / fingerprintZ / POWER2"@es ;
+    ind:source kg:InfluxDBEkin ;
+    ind:measurementName "fingerprintZ" ;
+    ind:fieldName "POWER2" .
+
+# Enlace de RPM1 al servomotor izquierdo.
+kg:N040 ind:hasProperty kg:RPM1Property .
+
+kg:RPM1Property a ind:RotationSpeedProperty ;
+    rdfs:label "Propiedad de velocidad de rotación asociada a RPM1"@es ;
+    ind:isPropertyOf kg:N040 ;
+    ind:hasTimeSeriesBinding kg:RPM1Binding .
+
+kg:RPM1Binding a ind:TimeSeriesBinding ;
+    rdfs:label "Mapeo ekin / fingerprintZ / RPM1"@es ;
+    ind:source kg:InfluxDBEkin ;
+    ind:measurementName "fingerprintZ" ;
+    ind:fieldName "RPM1" .
+
+# Enlace de RPM2 al servomotor derecho.
+kg:N041 ind:hasProperty kg:RPM2Property .
+
+kg:RPM2Property a ind:RotationSpeedProperty ;
+    rdfs:label "Propiedad de velocidad de rotación asociada a RPM2"@es ;
+    ind:isPropertyOf kg:N041 ;
+    ind:hasTimeSeriesBinding kg:RPM2Binding .
+
+kg:RPM2Binding a ind:TimeSeriesBinding ;
+    rdfs:label "Mapeo ekin / fingerprintZ / RPM2"@es ;
+    ind:source kg:InfluxDBEkin ;
+    ind:measurementName "fingerprintZ" ;
+    ind:fieldName "RPM2" .
+
+# Enlace de INTENSITY1 al servomotor izquierdo.
+kg:N040 ind:hasProperty kg:INTENSITY1Property .
+
+kg:INTENSITY1Property a ind:IntensityProperty ;
+    rdfs:label "Propiedad de intensidad asociada a INTENSITY1"@es ;
+    ind:isPropertyOf kg:N040 ;
+    ind:hasTimeSeriesBinding kg:INTENSITY1Binding .
+
+kg:INTENSITY1Binding a ind:TimeSeriesBinding ;
+    rdfs:label "Mapeo ekin / fingerprintZ / INTENSITY1"@es ;
+    ind:source kg:InfluxDBEkin ;
+    ind:measurementName "fingerprintZ" ;
+    ind:fieldName "INTENSITY1" .
+
+# Enlace de INTENSITY2 al servomotor derecho.
+kg:N041 ind:hasProperty kg:INTENSITY2Property .
+
+kg:INTENSITY2Property a ind:IntensityProperty ;
+    rdfs:label "Propiedad de intensidad asociada a INTENSITY2"@es ;
+    ind:isPropertyOf kg:N041 ;
+    ind:hasTimeSeriesBinding kg:INTENSITY2Binding .
+
+kg:INTENSITY2Binding a ind:TimeSeriesBinding ;
+    rdfs:label "Mapeo ekin / fingerprintZ / INTENSITY2"@es ;
+    ind:source kg:InfluxDBEkin ;
+    ind:measurementName "fingerprintZ" ;
+    ind:fieldName "INTENSITY2" .
+
+# Enlace de POSITIONC al plato divisor.
+kg:N017 ind:hasProperty kg:POSITIONCProperty .
+
+kg:POSITIONCProperty a ind:PositionProperty ;
+    rdfs:label "Propiedad de posición asociada a POSITIONC"@es ;
+    ind:isPropertyOf kg:N017 ;
+    ind:hasTimeSeriesBinding kg:POSITIONCBinding .
+
+kg:POSITIONCBinding a ind:TimeSeriesBinding ;
+    rdfs:label "Mapeo ekin / fingerprintZ / POSITIONC"@es ;
+    ind:source kg:InfluxDBEkin ;
+    ind:measurementName "fingerprintZ" ;
+    ind:fieldName "POSITIONC" .
+
+# Enlace de POSITIONZ al carro porta-piezas.
+kg:N016 ind:hasProperty kg:POSITIONZProperty .
+
+kg:POSITIONZProperty a ind:PositionProperty ;
+    rdfs:label "Propiedad de posición asociada a POSITIONZ"@es ;
+    ind:isPropertyOf kg:N016 ;
+    ind:hasTimeSeriesBinding kg:POSITIONZBinding .
+
+kg:POSITIONZBinding a ind:TimeSeriesBinding ;
+    rdfs:label "Mapeo ekin / fingerprintZ / POSITIONZ"@es ;
+    ind:source kg:InfluxDBEkin ;
+    ind:measurementName "fingerprintZ" ;
+    ind:fieldName "POSITIONZ" .
 
 # RDF-star statement provenance (GraphDB Turtle-star)
 << <https://cfaa.eus/assets/Brochadora> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://cfaa.eus/ontology/industrial/BroachingMachine> >> <http://www.w3.org/ns/prov#wasDerivedFrom> <urn:uuid:bae51900-5389-5d1d-a93a-4ade1a12c9a1> .
