@@ -1,5 +1,6 @@
 @prefix : <https://cfaa.eus/ontology/industrial/> .
 @prefix ind: <https://cfaa.eus/ontology/industrial/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -55,6 +56,16 @@ ind:hasTimeSeriesBinding rdf:type owl:ObjectProperty ;
                          rdfs:range ind:TimeSeriesBinding ;
                          rdfs:label "has time series binding"@en ,
                                     "tiene mapeo de serie temporal"@es .
+
+
+###  https://cfaa.eus/ontology/industrial/hasUnit
+ind:hasUnit rdf:type owl:ObjectProperty ;
+            rdfs:domain ind:AssetProperty ;
+            rdfs:range qudt:Unit ;
+            rdfs:label "has unit"@en ,
+                       "tiene unidad"@es ;
+            rdfs:comment "Specifies the measurement unit used for values of an asset property."@en ,
+                         "Indica la unidad de medida empleada para los valores de una propiedad de un activo."@es .
 
 
 ###  https://cfaa.eus/ontology/industrial/isPropertyOf
