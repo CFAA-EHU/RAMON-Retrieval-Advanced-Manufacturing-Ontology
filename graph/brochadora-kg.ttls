@@ -383,6 +383,7 @@ kg:TORQUE1Property a ind:TorqueProperty ;
     rdfs:label "Propiedad de par asociada a TORQUE1"@es ;
     ind:isPropertyOf kg:N040 ;
     ind:hasUnit unit:N-M ;
+    ind:maxValue "40"^^xsd:decimal ;
     ind:hasTimeSeriesBinding kg:TORQUE1Binding .
 
 kg:TORQUE1Binding a ind:TimeSeriesBinding ;
@@ -398,6 +399,7 @@ kg:TORQUE2Property a ind:TorqueProperty ;
     rdfs:label "Propiedad de par asociada a TORQUE2"@es ;
     ind:isPropertyOf kg:N041 ;
     ind:hasUnit unit:N-M ;
+    ind:maxValue "40"^^xsd:decimal ;
     ind:hasTimeSeriesBinding kg:TORQUE2Binding .
 
 kg:TORQUE2Binding a ind:TimeSeriesBinding ;

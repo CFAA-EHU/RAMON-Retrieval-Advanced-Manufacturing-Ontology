@@ -76,6 +76,17 @@ ind:isPropertyOf rdf:type owl:ObjectProperty ;
                             "is property of"@en .
 
 
+###  https://cfaa.eus/ontology/industrial/maxValue
+ind:maxValue a owl:DatatypeProperty ;
+    rdfs:domain ind:AssetProperty ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "Maximum value"@en ,
+               "Valor máximo"@es ;
+    rdfs:comment
+        "Maximum permitted or specified value of an industrial asset property."@en ,
+        "Valor máximo permitido o especificado de una propiedad industrial."@es .
+
+
 ###  https://cfaa.eus/ontology/industrial/partOf
 ind:partOf rdf:type owl:ObjectProperty ,
                     owl:TransitiveProperty ;
